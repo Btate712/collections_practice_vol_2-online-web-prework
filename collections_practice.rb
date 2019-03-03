@@ -76,4 +76,5 @@ def find_cool(input)
       return_array.push(hash)
     end
   end
+  return_array
 end
