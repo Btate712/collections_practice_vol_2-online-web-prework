@@ -84,4 +84,5 @@ def organize_schools(schools)
   schools.each do |key, value|
     return_hash[value[:location]].push(key)
   end
+  return_hash
 end
