@@ -58,10 +58,11 @@ def merge_data(keys, data)
           if value == data_name
             temp_hash[key] = value
             data_info.each do |k, v|
-              binding.pry
+              temp_hash[k] = v
             end
           end
         end
+        return_array.push(temp_hash)
       end
     end
   end
