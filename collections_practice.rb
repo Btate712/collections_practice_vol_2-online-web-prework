@@ -70,9 +70,10 @@ def merge_data(keys, data)
 end
 
 def find_cool(input)
+  return_array = []
   input.each do |hash|
-    hash.each do |key, value|
-      binding.pry
+    if hash[:temperature] == "cool"
+      return_array.push(hash)
     end
   end
 end
