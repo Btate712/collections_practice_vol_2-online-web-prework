@@ -51,7 +51,7 @@ end
 def merge_data(keys, data)
   keys.each do |first_name|
     data.each do |personal_data|
-      binding pry
+      binding.pry
     end
   end
 end
