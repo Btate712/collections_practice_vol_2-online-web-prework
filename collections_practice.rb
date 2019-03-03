@@ -1,3 +1,5 @@
+require 'pry'
+
 def begins_with_r(array)
   array.each do |word|
     if word.chars.first != "r"
@@ -47,6 +49,10 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-
+  keys.each do |first_name|
+    data.each do |personal_data|
+      binding pry
+    end
+  end
 end
   
