@@ -82,7 +82,10 @@ end
 def organize_schools(schools)
   return_hash = {}
   schools.each do |key, value|
-    binding.pry
+    if !return_hash.include?(value[:location])
+      return_hash[value[:location]] = []
+    end
+    return_hash[value[:location]].push(key)
   end
   return_hash
 end
