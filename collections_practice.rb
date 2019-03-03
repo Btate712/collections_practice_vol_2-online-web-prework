@@ -78,3 +78,9 @@ def find_cool(input)
   end
   return_array
 end
+
+def organized_schools(schools)
+  schools.each do |key, value|
+    binding.pry
+  end
+end
