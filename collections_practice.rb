@@ -68,3 +68,11 @@ def merge_data(keys, data)
   end
   return_array
 end
+
+def find_cool(input)
+  input.each do |hash|
+    hash.each do |key, value|
+      binding.pry
+    end
+  end
+end
