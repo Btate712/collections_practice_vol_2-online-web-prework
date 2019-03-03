@@ -66,4 +66,5 @@ def merge_data(keys, data)
       end
     end
   end
+  return_array
 end
