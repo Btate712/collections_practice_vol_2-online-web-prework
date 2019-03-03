@@ -49,11 +49,18 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
+  return_array = []
   keys.each do |first_name|
     first_name.each do |key, value|
       data.each do |data_item|
+        temp_hash = {}
         data_item.each do |data_name, data_info|
-          binding.pry
+          if value == data_name
+            temp_hash[key] = value
+            data_info.each do |k, v|
+              binding.pry
+            end
+          end
         end
       end
     end
